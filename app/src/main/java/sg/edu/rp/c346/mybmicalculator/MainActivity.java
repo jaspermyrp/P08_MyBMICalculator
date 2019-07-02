@@ -88,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor prefsEdit = prefs.edit();
         String lastCalcDate = prefs.getString("lastCalc", "");
         float lastBmi = prefs.getFloat("lastBmi", bmiCalculation);
         String remarks = prefs.getString("remarks", "");
